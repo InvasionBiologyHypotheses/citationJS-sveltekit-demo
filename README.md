@@ -1,40 +1,43 @@
-# create-svelte
+# Citation JS example using Sveltekit
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+A super simple example of how to use [Citation-JS](https://citation.js.org/) in [SvelteKit](https://kit.svelte.dev/)
 
-## Creating a project
+## To run locally
 
-If you're seeing this, you've probably already done this step. Congrats!
+Uses [pnpm](https://pnpm.io/).
 
-```bash
-# create a new project in the current directory
-npm init svelte@next
-
-# create a new project in my-app
-npm init svelte@next my-app
-```
-
-> Note: the `@next` is temporary
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+You'll need [NodeJS](https://nodejs.org/) and npm installed. If you don't already have pnpm installed you can either install it globally on your machine by running
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+npm i -g pnpm
 ```
 
-## Building
+or simply appending `npx` to the beginning of the following commands.
 
-To create a production version of your app:
+Once cloned to your local machine, install all the dependencies with
 
 ```bash
-npm run build
+pnpm i
 ```
 
-You can preview the production build with `npm run preview`.
+from within the repo's root directory (or `npx pnpm i` if you don't want to install pnpm... but you should 😉).
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+To start the development server run:
+
+```bash
+pnpm dev
+```
+
+You can then access the local development server at http://localhost:3000/
+
+If you have something else running on port 3000 locally you can change the port by starting the server with (for instance, port 8989):
+
+```bash
+pnpm dev -- --port=8989
+```
+
+Edit the files as necessary &amp; when you are ready don't forget to push!
+
+## Issues
+
+If you have any issues please create a new issue in the github repo's issue tracker.
