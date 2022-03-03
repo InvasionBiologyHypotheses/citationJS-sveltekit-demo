@@ -19,5 +19,9 @@
     "prettier-plugin-svelte": "^2.5.0",
     "svelte": "^3.44.0"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "@citation-js/core": "^0.5.4",
+    "@citation-js/plugin-wikidata": "^0.5.4"
+  }
 }
