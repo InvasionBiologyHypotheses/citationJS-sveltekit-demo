@@ -36,8 +36,6 @@ If you have something else running on port 3000 locally you can change the port 
 pnpm dev -- --port=8989
 ```
 
-Edit the files as necessary &amp; when you are ready don't forget to push!
-
 ## Issues
 
 If you have any issues please create a new issue in the github repo's issue tracker.
